@@ -1,0 +1,33 @@
+<!doctype html >
+<!<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+   <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="styles/main.css">
+  </head>
+  <body ng-app="App">
+
+
+
+  <div ng-view="">
+      <div ng-show="loading"> Loading... </div>
+  </div>
+
+   <script src="bower_components/jquery/jquery.js"></script>
+    <script src="bower_components/angular/angular.js"></script>
+   <script src="bower_components/angular-route/angular-route.js"></script>
+   <script src="bower_components/angular-resource/angular-resource.js"></script>
+
+   <script src="scripts/app.js"></script>
+
+  <script src="scripts/config/routes.js"></script>
+  <script src="scripts/resources/factory/users.js"></script>
+  <script src="scripts/controllers/homeController.js"></script>
+  <script src="scripts/controllers/userCtrl.js"></script>
+  <script src="scripts/controllers/editUserCtrl.js"></script>
+
+
+
+  </body>
+</html>

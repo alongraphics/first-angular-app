@@ -1,0 +1,16 @@
+<input type="text" ng-model="filter.user"/>
+<ul>
+    <li ng-cloak ng-repeat="user in users | filter:filter.user">
+        <a href="#/user/{{ user.id }}"> {{ user.name }} | {{ user.email }}</a>
+    </li>
+</ul>
+
+<form ng-submit="processForm()">
+    <p>your name: <input type="text" ng-model="formData.name" value="{{ user.name }}"/></p>
+    <p>your email: <input type="text" ng-model="formData.email" value="{{ user.email }}"/></p>
+    <button>Add</button>
+</form>
+
+<br/>
+
+<input type="text" ng-model="test" value="{{test}}"/>
